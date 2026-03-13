@@ -36,15 +36,15 @@ portrait_caption: >-
 
 education:
 - name: Xiangtan University
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: /assets/images/badges/xtu.png
   position: >- 
     School of Mathematics and Computational Science Science <br/>
     Ph.D. Student
   date: Sep. 2022 - present
 - name: Jishou University
-  logo: /assets/images/badges/xtu.png
-  position: B.S. in Computer Science
-  date: Sep. 2019 - Jul. 2021
+  logo: /assets/images/badges/jsu.png
+  position: B.S. in Mathematics
+  date: Sep. 2016 - Jun. 2020
 
 # experience:
 # - name: Jishou University
