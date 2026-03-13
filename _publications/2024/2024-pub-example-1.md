@@ -9,7 +9,7 @@ pub_last:       ' <span class="badge badge-pill badge-publication badge-success"
 pub_date:       "2024"
 semantic_scholar_id: 204e3073870fae3d05bcbc2f6a8e263d9b72e776  # use this to retrieve citation count
 abstract: >-
-  In control systems, the study of controllability, observability and stability can often be transformed into the estimation of the upper and lower bounds for the solution of the Lyapunov matrix differential equation. In this paper, by using the identity transformation of the Lyapunov matrix differential equation and some important eigenvalues inequalities, we obtain new upper and lower matrix bounds of the Lyapunov matrix differential equation. The random numerical examples indicate that the derived bounds are better than the existing one in most cases, which show the effectiveness and superiority of our results.
+  In control systems, the study of controllability, observability and stability can often be transformed into the estimation of the upper and lower bounds for the solution of the Lyapunov matrix differential equation. In this paper, by using the identity transformation of the Lyapunov matrix differential equation and some important eigenvalues inequalities, we obtain new upper and lower matrix bounds of the Lyapunov matrix differential equation. The random numerical examples indicate that the derived bounds are better than the existing one in most cases, which show the effectiveness and superiority of our results.
 cover:          /assets/images/covers/cover3.jpg
 authors:
   - Jianzhou Liu
