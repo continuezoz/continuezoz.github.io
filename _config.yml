@@ -38,8 +38,3 @@ collections:
   - publications
   - news
   - showcase
-
-collections:
-  talks:
-    output: true
-    permalink: /talks/:title/
