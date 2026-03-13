@@ -44,3 +44,6 @@ collections:
   talks:
     output: true
     permalink: /talks/:title/
+  academic_service:
+    output: true
+    permalink: /academic-service/:title/
