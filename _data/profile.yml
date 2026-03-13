@@ -37,12 +37,12 @@ education:
 - name: Xiangtan University
   logo: /assets/images/badges/xtu.png
   position: >- 
-    School of Mathematics and Computational Science Science <br/>
-    Ph.D. Student
+    School of Mathematics and Computational Science <br/>
+    Ph.D. Student in Mathematics
   date: Sep. 2022 - present
 - name: Jishou University
   logo: /assets/images/badges/jsu.png
-  position: B.S. in Mathematics
+  position: B.S. in Mathematics and Applied Mathematics
   date: Sep. 2016 - Jun. 2020
 
 # experience:
