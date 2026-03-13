@@ -10,7 +10,7 @@ pub_date:       "2025"
 semantic_scholar_id:   # use this to retrieve citation count
 abstract: >-
   The solution of the Lyapunov matrix differential equation (LDE) is closely related to the study of controllability, observability, input-output finite-time stability in linear systems, and so on. In this paper, first, we discuss the existence conditions of the positive semidefinite solution for the LDE. Then, by introducing shifted matrices and regularization terms, using some significant exponential eigenvalue inequalities, and combining the properties of the matrix-valued function, we propose new solution bounds for the LDE without any constraints. More importantly, one case of our bounds has been shown to generalize the previous results of Geromel and Bernussou (IEEE Transactions on Automatic Control, 24(3), 482–483). The numerical examples are provided to demonstrate the effectiveness and superiority of the proposed results in comparison with the existing results, which also provide a more effective tool for assessing the input-output finite-time stability of linear systems. 
-cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/etc/tim_the_beaver.png
 authors:
   - Jianzhou Liu
   - Ze Zhang
