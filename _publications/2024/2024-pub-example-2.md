@@ -1,6 +1,6 @@
 ---
 title:          "Lower and upper bounds of the solution for the Lyapunov matrix differential equation and an application in input-output finite-time stability of linear systems"
-date:           2024-01-25 00:01:00 +0800
+date:           2024-02-09 00:01:00 +0800
 selected:       true
 pub:            "Applied Mathematics Letters"
 # pub_pre:        "Submitted to "
