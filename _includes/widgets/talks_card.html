@@ -1,40 +1,53 @@
 {% if include.limit %}
-    {% assign talks = site.talks | sort: "date" | reverse | limit: include.limit %}
+    {% assign talks_by_year = site.talks | sort: "date" | reverse | slice: 0, include.limit | group_by_exp: "item", "item.date | date: '%Y'" -%}
 {% else %}
-    {% assign talks = site.talks | sort: "date" | reverse %}
+    {% assign talks_by_year = site.talks | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" -%}
 {% endif %}
 
-{% assign count_talks = talks | size %}
+{% assign count_talks = talks_by_year | size %}
 {% if count_talks > 0 %}
-<div class="card mt-4">
-    <div class="card-body">
-        <h5 class="card-title mb-4"><i class="fas fa-microphone"></i> {{ include.title | default: "Talks" }}</h5>
-        <div class="row">
-            <div class="col">
-                <ul class="list-unstyled mb-0">
-                    {% for talk in talks %}
-                    <li class="mb-3">
-                        <div class="d-flex w-100 justify-content-between">
-                            <h6 class="mb-1">{{ talk.title }}</h6>
-                            <small class="text-muted">{{ talk.date | date: "%b %Y" }}</small>
-                        </div>
-                        <p class="mb-1 text-muted">{{ talk.venue }}</p>
-                        {% if talk.link %}
-                        <a href="{{ talk.link }}" target="_blank" class="badge badge-pill badge-primary">Slides</a>
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <!-- 标题样式和News完全一致：h6 + p-3 + border-bottom -->
+    <h6 class="p-3 mb-0 border-bottom border-gray">
+        <i class="fas fa-microphone"></i> {{ include.title | default: "Talks" }}
+    </h6>
+    <div class="px-3 pb-1 small">
+        {% for year in talks_by_year %}
+        <div class="media py-1 {% if not_first -%}border-top border-gray{%- endif %}">
+            {% assign not_first = true %}
+            <div class="mr-3 text-muted my-1">{{ year.name }}</div>
+            <div class="media-body">
+                {% for item in year.items %}
+                <div class="my-1">
+                    <!-- 讲座标题 -->
+                    <div class="d-flex">
+                        <div>{{ item.title }}</div>
+                        <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%b %d" }}</i></div>
+                    </div>
+                    <!-- 讲座地点（Talks特有） -->
+                    {% if item.venue %}
+                    <div class="text-muted mt-1">{{ item.venue }}</div>
+                    {% endif %}
+                    <!-- 幻灯片/视频链接（Talks特有） -->
+                    <div class="mt-1">
+                        {% if item.link %}
+                        <a href="{{ item.link }}" target="_blank" class="badge badge-pill badge-primary">Slides</a>
                         {% endif %}
-                        {% if talk.video %}
-                        <a href="{{ talk.video }}" target="_blank" class="badge badge-pill badge-info">Video</a>
+                        {% if item.video %}
+                        <a href="{{ item.video }}" target="_blank" class="badge badge-pill badge-info">Video</a>
                         {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% if include.show_more %}
-                <div class="text-right mt-3">
-                    <a href="/talks.html">All Talks >></a>
+                    </div>
                 </div>
-                {% endif %}
+                {% endfor %}
             </div>
         </div>
+        {% endfor %}
     </div>
+    <!-- 可选：显示"All Talks"链接 -->
+    {% if include.show_more %}
+    <div class="px-3 pb-3 text-right small">
+        <a href="/talks.html">All Talks >></a>
+    </div>
+    {% endif %}
 </div>
 {% endif %}
