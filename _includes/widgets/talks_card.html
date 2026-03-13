@@ -1,0 +1,40 @@
+{% if include.limit %}
+    {% assign talks = site.talks | sort: "date" | reverse | limit: include.limit %}
+{% else %}
+    {% assign talks = site.talks | sort: "date" | reverse %}
+{% endif %}
+
+{% assign count_talks = talks | size %}
+{% if count_talks > 0 %}
+<div class="card mt-4">
+    <div class="card-body">
+        <h5 class="card-title mb-4"><i class="fas fa-microphone"></i> {{ include.title | default: "Talks" }}</h5>
+        <div class="row">
+            <div class="col">
+                <ul class="list-unstyled mb-0">
+                    {% for talk in talks %}
+                    <li class="mb-3">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">{{ talk.title }}</h6>
+                            <small class="text-muted">{{ talk.date | date: "%b %Y" }}</small>
+                        </div>
+                        <p class="mb-1 text-muted">{{ talk.venue }}</p>
+                        {% if talk.link %}
+                        <a href="{{ talk.link }}" target="_blank" class="badge badge-pill badge-primary">Slides</a>
+                        {% endif %}
+                        {% if talk.video %}
+                        <a href="{{ talk.video }}" target="_blank" class="badge badge-pill badge-info">Video</a>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% if include.show_more %}
+                <div class="text-right mt-3">
+                    <a href="/talks.html">All Talks >></a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
