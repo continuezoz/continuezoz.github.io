@@ -35,11 +35,12 @@ plugins:
 # timezone: Asia/Shanghai
 
 collections:
-  - publications
-  - news
-  - showcase
-
-collections:
+  publications:
+    output: true
+  news:
+    output: true
+  showcase:
+    output: true
   talks:
     output: true
     permalink: /talks/:title/
