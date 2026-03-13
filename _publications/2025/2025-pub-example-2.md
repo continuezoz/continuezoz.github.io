@@ -10,7 +10,7 @@ pub_date:       "2025"
 semantic_scholar_id:   # use this to retrieve citation count
 abstract: >-
   This paper establishes several equivalent conditions for a unique positive definite solution of the unified algebraic Lyapunov matrix equation (UALE). Then, two iterative algorithms for the UALE driven by error precision are proposed, which can be accelerated by optimizing the calculation of series terms. The algorithm's convergence, computational complexity, and optimal parameter selection are discussed, supported by a series of numerical experiments that illustrate the effectiveness and superiority of our results. Finally, by constructing a positive semi-definite matrix and employing matrix-singular inequality, a new robust bound for the unified perturbed system is derived, generalizing some of the existing results. Some numerical experiments demonstrate its practicality and advantage.
-cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/etc/tim_the_beaver.png
 authors:
   - Yan Xu
   - Jianzhou Liu
