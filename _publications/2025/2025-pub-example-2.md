@@ -1,5 +1,5 @@
 ---
-title:          "The existence conditions of the positive semidefinite solution for the Lyapunov matrix differential equation and improvements in its bounds"
+title:          "Accelerated Algorithms for Solving the Unified Algebraic Lyapunov Matrix Equation and Its Application in Stability of Perturbed Systems"
 date:           2025-12-15 00:01:00 +0800
 selected:       true
 pub:            "Numerical Linear Algebra with Applications"
