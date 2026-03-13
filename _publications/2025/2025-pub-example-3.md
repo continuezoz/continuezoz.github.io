@@ -10,7 +10,7 @@ pub_date:       "2025"
 semantic_scholar_id:   # use this to retrieve citation count
 abstract: >-
   The properties of delta operator systems are intrinsically linked to the Lyapunov generalised differential matrix equation (LGDE). This paper establishes the exact solution of GLDE and discusses the existence conditions of positive semi-definite (positive definite) solutions. Through the construction of two novel identity transformations and the application of some key inequalities, new matrix bounds for the LGDE are proposed, extending some known results for the continuous case. Furthermore, based on these matrix bounds obtained, new eigenvalue bounds are derived, which are less restrictive than previous findings and complement the existing bounds. Numerical examples demonstrate the effectiveness and superiority of the proposed results. Finally, the solution expression and matrix bounds are applied to the minimum energy control of the system through simulation experiments.
-cover:          /assets/images/covers/cover3.jpg
+cover:          /assets/images/etc/tim_the_beaver.png
 authors:
   - Jianzhou Liu
   - Yan Xu
