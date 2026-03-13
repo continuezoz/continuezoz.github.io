@@ -42,15 +42,15 @@ education:
     Ph.D. Student
   date: Sep. 2022 - present
 - name: Jishou University
-  logo: /assets/images/badges/PKU_red.png
+  logo: /assets/images/badges/xtu.png
   position: B.S. in Computer Science
   date: Sep. 2019 - Jul. 2021
 
 # experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
+# - name: Jishou University
+#   logo: /assets/images/badges/jsu.png
 #   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+#   date: Sep. 2016 - Jun. 2020
 
 awards:
 - name: Award Name 2
