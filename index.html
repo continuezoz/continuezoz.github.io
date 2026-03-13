@@ -34,6 +34,13 @@ navbar_title: Home
         {% endif %}
         {% endif %}
 
+        {% if site.data.display.homepage.show_academic_service %}
+        {% assign count_service = site.academic_service | size %}
+        {% if count_service > 0 %}
+        {% include widgets/academic_service_card.html limit=site.data.display.homepage.num_academic_service %}
+        {% endif %}
+        {% endif %}
+
         {% if site.data.display.homepage.show_selected_publications %}
         {% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
         {%
